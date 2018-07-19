@@ -74,14 +74,14 @@ body {
 }
 .navlinks ul {
 	margin: 5vh 0 0 0;
-	animation-name: example;
-	animation-duration: 10s;
+	animation-name: csstitleanimation;
+	animation-duration: 5s;
 }
 .navlinks ul {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-	height: auto;
+	margin-top: 5vh;
 	display: flex;
 	width: 75vw;
 	height: auto;
@@ -102,6 +102,8 @@ body {
     padding: 3px;
 	transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
+	animation-name: csstitleanimation;
+	animation-duration: 5s;
 }
 /*
 About Me Section */
@@ -161,6 +163,7 @@ About Me Section */
 	width: 90vw;
 	height: 80vh;
 	clip-path: circle(40% at 50% 40%);
+	 -webkit-clip-path: circle(40% at 50% 40%);
 	position: relative;
 	z-index: 100;
 	margin-top: 18vh;
@@ -551,6 +554,12 @@ About Me Section */
 	left: 15vw;
 	top: 25vh;
 }
+.footer {
+	margin-top: 10vh;
+	text-align: center;
+	padding: 10px;
+	font-size: 1.5vh;
+}
 
 /* CSS ANIMATIONS */
 @keyframes csstitleanimation {
@@ -569,6 +578,7 @@ About Me Section */
 	}
 	.profilepic {
 		clip-path: circle(30% at 50% 35%);
+		 -webkit-clip-path: circle(30% at 50% 35%);
 		margin-left: 2vw;
 	}.timelinebubble h3 {
 		font-size: 3vh;
@@ -696,6 +706,7 @@ About Me Section */
 			height: 75vh;
 			margin: 0;
 			clip-path: circle(30% at 50% 40%);
+			-webkit-clip-path: circle(30% at 50% 40%);
 		}
 		.maintimeline {
 			height: 130vh;
@@ -748,14 +759,15 @@ About Me Section */
 			height: 100px;
 		}
 	}
-	@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
 		.profilepic {
 			clip-path: circle(30% at 45% 40%);
+			-webkit-clip-path: circle(30% at 45% 40%);
 		}
 		.portfoliotitleblock h2{
 			font-size: 6vh;}
 	}
-    @media only screen and (max-width: 450px) {
+@media only screen and (max-width: 450px) {
 		.aboutblock {
 			width: 50vw;
 		}
@@ -765,17 +777,15 @@ About Me Section */
 		.profilepic {
 			margin-top: 10vh;
 			clip-path: circle(30% at 50% 30%);
+			-webkit-clip-path:circle(30% at 50% 30%);
 		}
 		.findmetitleblock {
 			width: 50vw;
 		}
 }
+/* iPHONE X */
 	@media only screen and (max-width: 375px) {
-		.aboutblock {
-			width: 100vw;
-		}
 		.profilepic {
-			clip-path: circle(30% at 50% 30%);
 			height: 80vh;
 		}
 		.textcolumn {
@@ -786,7 +796,28 @@ About Me Section */
 		.findmetitleblock {
 			width: 100vw;
 		}
-	}
-	.aboutblock h2 {
-		font-size: 6vh;
-	}
+		.aboutblock h2 {
+			font-size: 6vh;
+		}
+		.maintimeline {
+			height: 115vh;
+		}
+		.timelinetitleblock {
+			height: 9vh;
+		}
+		.timelinetitleblock2 {
+			height: 5vh;
+		}
+		.process {
+			margin-top: 2vh;
+		}
+		.processblock {
+			height: 155vh;
+		}
+		.skills {
+			margin-top: 2vh;
+		}
+		.portfolioblock {
+			margin-top: -15vh;
+		}
+}
