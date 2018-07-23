@@ -710,11 +710,10 @@ About Me Section */
 		font-size: 2vh;
 		}
 	.skillsblock {
-		height: 50%;
+		height: 75vh;
 	}
-	.skillicon img {
-		height: 100px;
-		width: 100px;
+	.skillsbgblock {
+		height: 90vh;
 	}
 	}
 
