@@ -37,7 +37,7 @@ body {
 	justify-content: center;
 	margin-top: -60px;
 	animation-name: csstitleanimation;
-	animation-duration: 5s;
+	animation-duration: 4s;
 	margin-top: -50px;
 }
 .offsetblock {
@@ -62,7 +62,7 @@ body {
 	color: #FFC857;
 	margin: 0;
 }
-.navlinks{
+.navlinks {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -70,12 +70,12 @@ body {
 	flex-wrap: wrap;
 	padding-top: 25px;
 	animation-name: csstitleanimation;
-	animation-duration: 5s;
+	animation-duration: 4s;
 }
 .navlinks ul {
 	margin: 5vh 0 0 0;
 	animation-name: csstitleanimation;
-	animation-duration: 5s;
+	animation-duration: 4s;
 }
 .navlinks ul {
 	margin: 0;
@@ -86,11 +86,15 @@ body {
 	width: 75vw;
 	height: auto;
 	flex-basis: 30%;
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
 .ullinks {
 	text-decoration: none;
-	color: white;
+	color: #F2F2F2;
+}
+.ullinks:hover {
+	text-decoration: underline;
+	color: #FFC857;
 }
 .smalltriangle {
     border: solid #FFC857;
@@ -103,7 +107,7 @@ body {
 	transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
 	animation-name: csstitleanimation;
-	animation-duration: 5s;
+	animation-duration: 4s;
 }
 /*
 About Me Section */
@@ -112,6 +116,7 @@ About Me Section */
 	flex-direction: column;
 	width: 100vw;
 	padding-top: 50px;
+	scroll-behavior: smooth;
 }
 .abouttitle {
 	display: flex;
@@ -162,8 +167,8 @@ About Me Section */
 	background-size: cover;
 	width: 90vw;
 	height: 80vh;
-	clip-path: circle(40% at 50% 40%);
-	 -webkit-clip-path: circle(40% at 50% 40%);
+	clip-path: circle(35% at 50% 40%);
+	 -webkit-clip-path: circle(35% at 50% 40%);
 	position: relative;
 	z-index: 100;
 	margin-top: 18vh;
@@ -178,13 +183,13 @@ About Me Section */
 	left: 50px;
 	border-left: 20vw solid transparent;
 	border-right: 20vw solid transparent;
-	border-top: 40vw  solid #8B8BAE;
+	border-top: 30vw  solid #8B8BAE;
 	z-index: 0;
 }
 .triangle2 {
 	border-left: 20vw solid transparent;
 	border-right: 20vw solid transparent;
-	border-top: 40vw  solid rgba(139, 139, 174, 0.6);
+	border-top: 30vw  solid rgba(139, 139, 174, 0.6);
 	position: absolute;
 	left: 100px;
 	margin-top: -3vh;
@@ -212,8 +217,9 @@ About Me Section */
 	background-image: url('images/timeline.jpg');
 	background-size: cover;
 	width: 100vw;
-	height: 250vh;
+	height: 175vh;
 	position: relative;
+	scroll-behavior: smooth;
 }
 .timelinecutout {
 	position: absolute;
@@ -277,7 +283,7 @@ About Me Section */
     content: "";
     display: block;
     width: 3px;
-    height: 70%;
+    height: 60%;
     background: #8B8BAE;
     margin: 0 auto;
 	margin-top: 45vh;
@@ -287,42 +293,42 @@ About Me Section */
     right: 0;
 }
 .timelinebubble:nth-child(odd) {
-	width: 20vw;
-	height: 20vw;
+	width: 16.5vw;
+	height: 16.5vw;
 	border-radius: 50%;
 	background-color: #696D7D;
 	position: relative;
-	margin: 5vh 0 0 7vw;
+	margin: -5vh 0 0 15vw;
 }
 .timelinebubble:nth-child(odd)::after {
 	content: "";
-	width: 115%;
+	width: 113%;
 	height: 3px;
 	background: #8B8BAE;
 	margin: auto 0;
 	position: absolute;
 	top: 0;
-	left: 20vw;
+	left: 16.5vw;
 	bottom: 0;
 }
 .timelinebubble:nth-child(even) {
 	align-self: flex-end;
-	width: 20vw;
-	height: 20vw;
+	width: 16.5vw;
+	height: 16.5vw;
 	border-radius: 50%;
 	background-color: #696D7D;
 	position: relative;
-	margin: 5vh 7vw 0 0;
+	margin: -5vh 15vw 0 0;
 }
 .timelinebubble:nth-child(even)::after {
 	content: "";
-	width: 115%;
+	width: 112%;
 	height: 3px;
 	background: #8B8BAE;
 	margin: auto 0;
 	position: absolute;
 	top: 0;
-	right: 20vw;
+	right: 16.5vw;
 	bottom: 0;
 }
 .timelinebubble h3 {
@@ -330,12 +336,16 @@ About Me Section */
 	top:50%; left:50%;
 	transform: translate(-50%, -50%);
 	margin:0;
-	color: white;
+	color: #F2F2F2;
 	font-weight: normal;
-	font-size: 3.5vh;
+	font-size: 2.9vh;
 	text-align: center;
 	text-align: -webkit-center;
 }
+.timelinebubble:hover {
+	background-color: #8B8BAE;
+}
+
 /* PROCESS STYLING */
 .process {
 	width: 100%;
@@ -345,6 +355,7 @@ About Me Section */
 	justify-content: center;
 	flex-direction: column;
 	flex-wrap: nowrap;
+	scroll-behavior: smooth;
 }
 .processtitle {
 	display: flex;
@@ -366,7 +377,7 @@ About Me Section */
 	width: 75vw;
 	height: 55vh;
 	background-color: #696D7D;
-	color: white;
+	color: #F2F2F2;
 	font-size: 3vh;
 	flex-direction: row;
 	justify-content: space-around;
@@ -388,7 +399,7 @@ About Me Section */
 	height: 80vh;
 	position: absolute;
 	z-index: -10;
-	right: 4vw;
+	right: 4.5vw;
 }
 /* SKILLS STYLING */
 .skills {
@@ -399,6 +410,7 @@ About Me Section */
 	justify-content: center;
 	flex-direction: column;
 	flex-wrap: nowrap;
+	scroll-behavior: smooth;
 }
 .skillstitle {
 	display: flex;
@@ -431,13 +443,17 @@ About Me Section */
 	padding: 10px;
 	justify-content: center;
 }
+.icon{
+	width: 90px;
+	height: 90px;
+}
 .skillsbgblock {
 	background-color: #3D3D44;
 	width: 45vw;
 	height: 80vh;
 	position: absolute;
 	z-index: -10;
-	left: 4vw;
+	left: 4.5vw;
 }
 
 /* PORTFOLIO STYLING */
@@ -448,10 +464,13 @@ About Me Section */
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	scroll-behavior: smooth;
+	background-image: url('images/portfolio.jpg');
+	background-size: cover;
 }
 .portfoliotitlerow {
 	display: flex;
-	width: 80vw;
+	width: 91vw;
 	justify-content: flex-end;
 	margin-top: 5vh;
 }
@@ -493,7 +512,7 @@ About Me Section */
 	z-index: 1;
 }
 .imgrow, .textrow {
-	width: 40vw;
+	width: 70vw;
 }
 .imgrow {
 	display: flex;
@@ -501,11 +520,17 @@ About Me Section */
 	margin-top: -5vh;
 }
 .textrow {
-	color: white;
+	color: #F2F2F2;
 	font-size: 3.5vh;
 	text-align: center;
 	text-align: -webkit-center;
 	font-weight: thin;
+}
+.fab {
+	color: #F2F2F2;
+}
+.fab:hover {
+	color: #FFC857;
 }
 /* FIND ME  */
 .findme {
@@ -515,6 +540,7 @@ About Me Section */
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	scroll-behavior: smooth;
 }
 
 .findmetitlebar {
@@ -549,6 +575,12 @@ About Me Section */
 	align-items: center;
 	margin-top: -35vh;
 }
+.fas {
+	color: #F2F2F2;
+}
+.fas:hover {
+		color: #FFC857;
+}
 .decorbar {
 	background-color:#8B8BAE;
 	position: absolute;
@@ -558,19 +590,31 @@ About Me Section */
 	left: 15vw;
 	top: 25vh;
 }
+
+
+/* FOOTER */
 .footer {
 	margin-top: 10vh;
 	text-align: center;
 	text-align: -webkit-center;
 	padding: 10px;
 	font-size: 1.5vh;
-	text-align: -webkit-center;
+	background-color: #8B8BAE;
+	color: #F2F2F2;
+}
+.footerlink {
+	text-decoration: none;
+	color: #FFC857;
+}
+.footerlink:visited {
+	text-decoration: none;
+	color: #3D3D44;
 }
 
 /* CSS ANIMATIONS */
 @keyframes csstitleanimation {
 	0%{opacity: 0}
-    50%{opacity: 0}
+    55%{opacity: 0}
     100% {opacity: 1}
 }
 /* MEDIA QUERIES */
@@ -591,6 +635,7 @@ About Me Section */
 		text-align: center;
 		text-align: -webkit-center;
 	}
+
 /* IPAD PRO */
 @media only screen and (max-width: 1024px) {
     .nametext {
@@ -710,7 +755,7 @@ About Me Section */
 		}
 		.profilepic {
 			width: 100vw;
-			height: 75vh;
+			height: 80vh;
 			margin: 0;
 			clip-path: circle(30% at 50% 40%);
 			-webkit-clip-path: circle(30% at 50% 40%);
@@ -790,6 +835,16 @@ About Me Section */
 			width: 50vw;
 		}
 }
+/* PIXEL */
+@media only screen and (max-width: 411px) {
+	.timelinetitleblock {
+		margin-top: -22.5vh;
+		height: 80px;
+	}
+	.timelinetitleblock2 {
+		height: 80px;
+	}
+}
 /* iPHONE X */
 	@media only screen and (max-width: 375px) {
 		.profilepic {
@@ -806,14 +861,11 @@ About Me Section */
 		.aboutblock h2 {
 			font-size: 6vh;
 		}
-		.maintimeline {
+		 .maintimeline {
 			height: 115vh;
 		}
-		.timelinetitleblock {
-			height: 9vh;
-		}
-		.timelinetitleblock2 {
-			height: 5vh;
+		.imgrow {
+			font-size: .75em;
 		}
 		.process {
 			margin-top: 2vh;
@@ -826,5 +878,29 @@ About Me Section */
 		}
 		.portfolioblock {
 			margin-top: -15vh;
+		}
+		.findmeblock {
+			font-size: .75em;
+		}
+		.decobar {
+			height: 60vh;
+			top: 30vh;
+			width: 15vw;
+		}
+}
+/* GALAXY NOTE III */
+	@media only screen and (max-width: 360px) {
+		.maintimeline {
+			height: 140vh;
+		}
+}
+/* iPhone 5/SE */
+	@media only screen and (max-width: 360px) {
+		.timelinetitleblock {
+			margin-top: -19.5vh;
+			height: 45px;
+		}
+		.timelinetitleblock2 {
+			height: 45px;
 		}
 }

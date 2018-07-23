@@ -3,13 +3,16 @@ var lineDrawing = anime({
 	  strokeDashoffset: [anime.setDashoffset, 0],
 	  easing: 'easeInOutSine',
 	  duration: 5000,
-	  delay: 500,
+	  delay: 50,
 	  direction: 'alternate',
 	  loop: false
 	});
 
+var defaultDuration = 777;
+var edgeOffset = 0;
+zenscroll.setup(defaultDuration, edgeOffset);
 
-window.sr = ScrollReveal({duration: 2000});
+window.sr = ScrollReveal({duration: 900});
 	sr.reveal('.aboutme');
 	sr.reveal('.maintimeline');
 	sr.reveal('.process');
